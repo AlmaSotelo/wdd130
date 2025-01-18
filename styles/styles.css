@@ -17,6 +17,36 @@ img {
    padding: 2px;
    box-shadow: 0 0 30px gray;
 }
-p {
-   padding: 10px
+
+p { 
+   padding: 0;
+   font-size: 20px;   
+ }
+main p {color:darkblue} 
+
+main { max-width: 100% }
+
+aside {
+   width: 99%;
+   margin: 5px;
+   border: 1px solid rgb(77, 107, 214);
+   padding: 5px;
+   background-color:rgba(217, 137, 18, 0.799);
+   color:darkblue;
+}
+/* style the img inside the aside*/
+aside img {
+   width: 200px;
+   height: auto;
+}
+/*To not allow the existing img CSS selector to affect this image in aside, change the selector for the existing profile img to be more exclusive by adding the main parent selector.*/
+main img {
+   width: 150px;
+   height: auto;
+}
+footer {
+   margin-top: 15px;
+   border-top: 1px solid #000;
+   text-align: center;
+   font-size: 2px;
 }
