@@ -1,6 +1,11 @@
+:root {
+   --heading-color:darkblue;
+   --pading:5px;
+}
+
 nav {
    background-color: darkblue;
-   padding: 10px;
+   padding: 20px;
 }
 nav a {
    color: white;
@@ -8,21 +13,21 @@ nav a {
    padding: 20px;
 }
 h1 {
-   color: darkblue;
+   color: var(--heading-color);
 }
 img {
    width: 150px;
    height:auto;
    border: 1px solid black;
-   padding: 2px;
+   padding: var(--padding);
    box-shadow: 0 0 30px gray;
 }
 
 p { 
-   padding: 0;
+   padding: 5px;
    font-size: 20px;   
  }
-main p {color:darkblue} 
+main p {color:var(--heading-color)} 
 
 main { max-width: 100% }
 
