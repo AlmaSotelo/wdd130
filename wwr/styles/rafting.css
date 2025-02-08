@@ -2,34 +2,34 @@
    --heading-color: #F5EEE6;
    --background-color: #386CA0;
    --color:#70553C;
-}     
+   --heading-font:Sriracha;
+}
+     
 h2 {
    color:var(--color);
-   font-family: Sriracha;
+   font-family: var(--heading-font);
+   font-size: 2rem;
 }
 .hero h1 {
    color: var(--heading-color);
-   font-family: Sriracha;
+   font-family: var(--heading-font);
    background-color:  #435560;
    opacity: 90%;
    text-align: center;
    position: absolute;
    top:.5rem;
    left:2rem;
+   
 }
 p {
    color: var(--color);
    font-family:farsan;
    font-size:20px
 }
-nav a {
-   text-decoration: none;
-}
-main {
-   width: 840px;
-}
+
 .hero {
    position:relative;
+   margin:1em 0;
 }
 
 .hero img {
@@ -39,31 +39,103 @@ main {
    height:auto;
    position:relative;   
 }
+
 .hero article {
    opacity: 90%;
    position:absolute;
-
 }
 
 article {
    position:absolute;
-   top: 11rem;
+   top: 1rem;
    left:2rem;
    right:2.5rem;
+   padding:5rem;
 }
+
 .hero article img {
    float:right;
-   width:100px;
+   width:150px;
    position:relative;
 }
 article p {
    color:#F5EEE6;
    padding:12px;
+   font-size:2rem;
 }
 section {
    display: block;
+
 }
 .sociallinks {
-   background-color:  #435560;
+   background-color:  #386CA0;
 }
+header {
+   display:grid;
+   grid-template-columns: 200px auto;
+   align-items: center;
+   background-color:#386CA0 ;
+}
+nav {
+   display:flex;
+   justify-content:space-around
+}
+nav a {
+   font-family:var(--heading-font);
+   font-size: 2rem;
+   text-decoration: none;
+   padding : 1.5rem;
+   color:#F5EEE6;
+}
+ nav a:hover {
+   background-color:#70553C;
+ }
+ .history {
+   display:grid;
+   grid-template-columns: 2fr 1fr 2fr;
+   gap: 1em;
+   margin: 1rem 0;
+ }
+ .history h2, .adventures h2 {
+   grid-column: 1/-1;
+   justify-self:center;
+   margin:0;
+ }
 
+ .adventures {
+   display:grid;
+   gap: 1em;
+   margin: 1rem 0;
+   grid-template-columns:repeat(5,1fr);
+   gap: 1rem;
+   justify-items: center;
+
+ }
+.adventures img{
+   width:100%;
+   height: 100%;
+}
+ figure {
+   background-color: #70553C;
+   color:#F5EEE6;
+   align-self: center;
+ }
+ figcaption {
+   text-align: center;
+   padding: .25em 0;
+   font-family: farsan;
+   font-size:30px;
+ }
+ footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0rem;
+   background-color: #386CA0;
+   margin-top: 1rem;   
+ }
+ footer p{
+   color:#F5EEE6;
+   font-size: 1.75rem;
+   padding-left: 2rem;
+ }
