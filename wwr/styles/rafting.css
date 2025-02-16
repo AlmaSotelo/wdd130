@@ -6,7 +6,9 @@
 }
 
 h2,
-h3 {
+h3,
+.contact h3,
+.contact h3  {
    color: var(--color);
    font-family: var(--heading-font);
    font-size: 2rem;
@@ -178,6 +180,7 @@ a {
 .contact,
 .form {
    padding: 20px;
+   margin-top:10px;
 }
 
 .contain {
@@ -200,18 +203,24 @@ iframe,
 .tel,
 .email,
 #location {
-
-   margin: 45px auto;
+   margin: 60px auto;
    font-family: farsan;
    color: #435560;
    font-size: 2rem;
-   ;
 }
 
 .email {
    width: 24rem;
    text-align: center;
 }
+
+.form h1 {
+   color: var(--color);
+   font-family: var(--heading-font);
+   font-size: 3rem;
+   text-align: center;
+   margin:0;
+} 
 
 .form {
    margin:0;
@@ -275,13 +284,13 @@ button {
 .staff figure {
    display: block;
    width: 300px;
-   height: 210px;
+   height: 225px;
    margin:10px;
-   margin-left: 105px ;
+   margin-left: 105px;
 
 }
 
 .staff img {
    width: 100%;
-   height: 150px;
+   height: 175px;
 }
