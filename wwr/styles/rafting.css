@@ -8,7 +8,7 @@
 h2,
 h3,
 .contact h3,
-.contact h3  {
+.contact h3 {
    color: var(--color);
    font-family: var(--heading-font);
    font-size: 2rem;
@@ -25,7 +25,7 @@ h3,
    top: 10%;
    transform: translate(-50%, -50%);
    font-size: 3rem;
-   padding:0 3rem;
+   padding: 0 3rem;
 }
 
 p {
@@ -91,8 +91,9 @@ header {
    align-items: center;
    background-color: #386CA0;
 }
+
 header img {
-   border:10px solid #386CA0
+   border: 10px solid #386CA0
 }
 
 nav {
@@ -180,12 +181,13 @@ a {
 .contact,
 .form {
    padding: 20px;
-   margin-top:10px;
+   margin-top: 10px;
 }
 
 .contain {
-   margin:10px;
+   margin: 10px;
 }
+
 iframe,
 .tel a {
    display: block;
@@ -219,11 +221,11 @@ iframe,
    font-family: var(--heading-font);
    font-size: 3rem;
    text-align: center;
-   margin:0;
-} 
+   margin: 0;
+}
 
 .form {
-   margin:0;
+   margin: 0;
    font-style: italic;
    font-size: 18px;
 }
@@ -238,6 +240,10 @@ form p {
 .user-email,
 textarea {
    width: 99%;
+}
+
+.block {
+   display: block;
 }
 
 textarea {
@@ -267,13 +273,11 @@ textarea {
    display: flex;
    margin: 10px 0;
    justify-content: center;
-
 }
 
 button {
    color: whitesmoke;
    background-color: #386CA0;
-   width: 30%;
    height: 3rem;
    border: 5px solid #70553C;
    font-size: 20px;
@@ -282,10 +286,9 @@ button {
 }
 
 .staff figure {
-   display: block;
    width: 300px;
    height: 225px;
-   margin:10px;
+   margin: 10px;
    margin-left: 105px;
 
 }

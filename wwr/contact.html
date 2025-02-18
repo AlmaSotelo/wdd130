@@ -52,39 +52,36 @@
          <form autocomplete="on">
             <fieldset>
                <legend>Contact Information</legend>
-               <div>
-                  <!-- <label for="fullname">Name:</label> -->
-                  <input type="text" id="fullname" name="fullname"
-                     class="user-name" placeholder="Name">
-               </div>
-               <br>
+               <label for="fullname">Name:</label>
+               <input type="text" id="fullname" name="fullname"
+                  class="user-name" placeholder="Name">
+               <label for="fullname">Name:</label>
                <input type="email" id="useremail" name="useremail"
                   class="user-email" placeholder="email@siteaddress.com">
             </fieldset>
             <fieldset>
                <legend>Inquiry</legend>
-               <div>
-                  <p>Choose one:</p>
-                  <input type="radio" id="general" name="inquiry"
-                     value="inquiry">
-                  <label for="general">General Inquiry</label>
-               </div>
-               <div>
-                  <input type="radio" id="reservation" name="res-question"
-                     value="reservation">
-                  <label for="reservation">Reservation Questions</label>
-               </div>
-               <div>
-                  <input type="radio" id="ws-suggestion" name="suggestion"
-                     value="suggestion">
-                  <label for="ws-suggestion">Webside Suggestion</label>
-               </div>
+               <p>Choose one:</p>
+
+               <label class="block" for="general">General Inquiry 
+               <input type="radio" id="general" name="inquiry"
+                  value="inquiry"></label>
+               
+               <label class="block" for="reservation">Reservation
+                  Questions
+               <input  type="radio" id="reservation" name="radgroup"
+                  value="reservation"></label>
+
+               <label class="block" for="ws-suggestion">Webside
+                  Suggestion
+               <input  type="radio" id="ws-suggestion" name="radgroup"
+                  value="suggestion"></label>
+
                <div class="textarea">
                   <label for="feedback">Give us details:</label><br>
                   <textarea id="feedback" name="feedback" rows="6"
                      placeholder="Type here"></textarea>
                </div>
-
             </fieldset>
             <fieldset class="news">
                <label for="suscription">Please subscribe me to the monthly
@@ -94,7 +91,6 @@
             <div class="button">
                <button type="submit">Sumbit Form</button>
             </div>
-
          </form>
       </section>
       <section class="staff">
