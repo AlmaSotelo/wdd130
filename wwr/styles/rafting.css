@@ -188,32 +188,26 @@ a {
    margin: 10px;
 }
 
-iframe,
-.tel a {
+iframe {
    display: block;
-   margin: 0 auto;
+   margin:0 auto;
 }
 
-.tel a,
-#location {
+.contact a {
+   display:block;
    text-decoration: none;
    font-family: farsan;
    color: #435560;
    width: 200px;
+   margin:0 auto;
 }
 
-.tel,
-.email,
-#location {
-   margin: 60px auto;
+
+.contact {
+   margin: 10px auto;
    font-family: farsan;
    color: #435560;
    font-size: 2rem;
-}
-
-.email {
-   width: 24rem;
-   text-align: center;
 }
 
 .form h1 {
@@ -252,37 +246,26 @@ textarea {
    resize: none;
 }
 
-fieldset,
-.textarea {
+fieldset{
    font-family: Arial, Helvetica, sans-serif;
    margin-top: .5rem;
 }
 
-button,
 input,
 textarea {
    font-family: inherit;
    font-size: 100%;
 }
 
-.news {
-   margin: 15px 0;
-}
-
-.button {
-   display: flex;
-   margin: 10px 0;
-   justify-content: center;
-}
-
 button {
+   display: block;
+   margin: 10px 0;
    color: whitesmoke;
    background-color: #386CA0;
    height: 3rem;
    border: 5px solid #70553C;
    font-size: 20px;
    font-family: var(--heading-font);
-   text-align: center;
 }
 
 .staff figure {
@@ -290,7 +273,6 @@ button {
    height: 225px;
    margin: 10px;
    margin-left: 105px;
-
 }
 
 .staff img {
