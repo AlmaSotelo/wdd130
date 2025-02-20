@@ -6,7 +6,7 @@
 }
 
 h2,
-h3  {
+h3 {
    color: var(--color);
    font-family: var(--heading-font);
    font-size: 2rem;
@@ -49,7 +49,6 @@ p {
 }
 
 .hero article {
-
    position: absolute;
    left: 60%;
    top: 70%;
@@ -107,6 +106,7 @@ nav a {
    text-decoration: none;
    padding: 1.5rem;
    color: #F5EEE6;
+   border-radius: 1rem;
 }
 
 nav a:hover {
@@ -128,7 +128,8 @@ nav a:hover {
    justify-items: center;
 }
 
-.adventures img {
+.adventures img,
+.category img {
    width: 100%;
    height: 100%;
 }
@@ -179,17 +180,17 @@ a {
 
 iframe {
    display: block;
-   margin:0 auto;
+   margin: 0 auto;
    margin-top: 10px;
 }
 
 .contact a {
-   display:block;
+   display: block;
    text-decoration: none;
    font-family: farsan;
    color: #435560;
    width: 200px;
-   margin:0 auto;
+   margin: 0 auto;
 }
 
 .contact {
@@ -201,11 +202,13 @@ iframe {
 }
 
 .form h1 {
-   color: var(--color);
    font-family: var(--heading-font);
-   font-size: 3rem;
+   font-size: 2rem;
+   opacity: 90;
+   color: var(--heading-color);
+   background-color: #435560;
    text-align: center;
-   margin: 0;
+   padding: 0 3rem;
 }
 
 .form {
@@ -222,8 +225,9 @@ form p {
 }
 
 .user-name,
-.user-email{
+.user-email {
    width: 99%;
+   padding: 5px;
 }
 
 .block {
@@ -238,13 +242,13 @@ textarea {
    font-size: 100%;
 }
 
-fieldset{
+fieldset {
    font-family: Arial, Helvetica, sans-serif;
    margin-top: .5rem;
 }
 
 input {
-   font-family: inherit  
+   font-family: inherit
 }
 
 button {
@@ -256,6 +260,7 @@ button {
    border: 5px solid #70553C;
    font-size: 20px;
    font-family: var(--heading-font);
+   border-radius: .5rem;
 }
 
 .staff figure {
@@ -268,4 +273,198 @@ button {
 .staff img {
    width: 100%;
    height: 175px;
+}
+
+#name,
+#email {
+   margin-top: 10px;
+}
+
+.bookNow {
+   position: absolute;
+   background-color: #435560;
+   opacity: 95%;
+   left: 75%;
+   top: 90%;
+   transform: translate(0, -50%);
+   text-align: center;
+   font-size: 2rem;
+   padding: 10px 20px;
+   border-radius: .5rem;
+}
+
+.bookNow p {
+   color: #F5EEE6;
+   margin: 0;
+   font-size: 2rem;
+}
+
+.bookNow a {
+   padding: 0;
+   font-family: var(--heading-font);
+   text-decoration: none;
+}
+
+.bookNow a:hover {
+   background-color: #70553C;
+}
+
+.category {
+   display: grid;
+   grid-template-columns: repeat(24, 1fr);
+   grid-template-rows: 10% 10% 80%;
+   margin-top: 30px;
+}
+
+.category a {
+   display: grid;
+   grid-column-start: 12;
+   grid-column-end: span 3;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   justify-content: center;
+   color: #F5EEE6;
+   text-decoration: none;
+   background-color: #435560;
+   font-family: var(--heading-font);
+   padding-left: 0;
+   border-radius: .5rem;
+}
+
+#professionals {
+   display: grid;
+   grid-column-start: 4;
+   grid-column-end: span 8;
+   grid-row-start: 1;
+   grid-row-end: 4;
+   color: #F5EEE6;
+   text-decoration: none;
+   background-color: #70553C;
+}
+
+#justforfun {
+   display: grid;
+   grid-column-start: 15;
+   grid-column-end: span 8;
+   grid-row-start: 1;
+   grid-row-end: 4;
+}
+
+.call-to-Contact-Us {
+   position: relative;
+   margin: 30px 0 30px 562px;
+}
+
+.call-to-Contact-Us img {
+   background-color: #70553C;
+   padding: 10px;
+}
+
+.call-to-Contact-Us aside {
+   position: absolute;
+   background: lightgray;
+   height: 100px;
+   width: 40%;
+   left: 300px;
+   top: 95px;
+   padding: 0 12px 20px 15px;
+}
+
+.call-to-Contact-Us a {
+   font-family: var(--heading-font);
+   text-decoration: none;
+   background-color: #435560;
+   border-radius: .5rem;
+   padding: 0 12px;
+}
+
+.form-newsletter {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.form-newsletter form {
+   display: grid;
+   grid-column-end: 3;
+   padding: 0 10px 20px;
+}
+
+.form-newsletter button {
+   border-radius: .5rem
+}
+
+.bookNow-sticky {
+   Position: Fixed;
+   background-color: #435560;
+   opacity: 95%;
+   left: 75%;
+   top: 50%;
+   transform: translate(0, -50%);
+   text-align: center;
+   font-size: 2rem;
+   padding: 10px 20px;
+   border-radius: .5rem;
+}
+
+.bookNow-sticky p {
+   color: #F5EEE6;
+   margin: 0;
+   font-size: 2rem;
+   margin: 0 auto;
+}
+
+.bookNow-sticky a {
+   padding: 0 10px;
+   font-family: var(--heading-font);
+   text-decoration: none;
+}
+
+.bookNow-sticky a:hover {
+   background-color: #70553C;
+   border-radius: .5rem;
+}
+
+#hero-trips-id {
+   color: var(--heading-color);
+   font-family: var(--heading-font);
+   background-color: #435560;
+   opacity: 90%;
+   text-align: center;
+   display: table;
+   margin: 30px auto;
+   font-size: 3rem;
+   padding: 0 3rem;
+}
+
+.trips img {
+   border: 5px solid #70553C;
+   padding: 2px;
+   margin: 1rem 1em 0 1em;
+   width: 30%;
+   display: inline;
+}
+
+.trips h2 {
+   font-size: 3rem;
+}
+
+.trips h3 {
+   padding: 0 10px;
+   background-color: #70553C;
+   color: #F5EEE6;
+}
+
+.trips p {
+   text-align: center;
+   margin-top: 0;
+}
+
+table {
+   width: 50%;
+   border: solid #435560;
+   margin: 0 auto 30px auto;
+   text-align: center;
+   font-family: farsan;
+   font-size: 1.5rem;
+   color: #435560
 }
